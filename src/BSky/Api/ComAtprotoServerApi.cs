@@ -2509,7 +2509,7 @@ namespace BSky.Api
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ComAtprotoServerCreateSession200Response>("/com.atproto.server.createSession", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ComAtprotoServerCreateSession200Response>("/com.atproto.server.createSession", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
